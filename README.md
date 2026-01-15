@@ -108,8 +108,8 @@ Author : Swsti Verma
 
 # workflow used for rna-seq analysis using galaxy
 
-1. download the data
-2. open galaxy
+1. download the data (zenodo.org/records/4249555) : SRR1552444, SRR1552445, SRR1552446, SRR1552447
+2. open galaxy (usegalaxy.org)
 3. upload data into galaxy
 
 
@@ -119,8 +119,20 @@ Author : Swsti Verma
 2. Observed quality metrics such as per-base sequence quality, GC content, and adapter content
 
 
+# Figure showing FASTQC result ( SRR1552447)
+
+1. per base sequence quality
+   <img width="1019" height="745" alt="image" src="https://github.com/user-attachments/assets/d7f699d3-b035-4a59-a223-c7d8376709fa" />
+
+2. Overrepresented sequences
+   <img width="843" height="209" alt="image" src="https://github.com/user-attachments/assets/3192cf70-30a6-4a21-9e05-ecd3b8563b89" />
+
+3. Adapter Content
+   <img width="1003" height="747" alt="image" src="https://github.com/user-attachments/assets/057dcc61-a5d7-4270-82ff-12b53d2fbed6" />
+
+
 # Key observations:
 
-1.Quality scores vary across read length
+1. Quality scores vary across read length
 2. GC content distribution reflects sample composition
 3. FastQC helps assess whether preprocessing is required
