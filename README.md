@@ -1,20 +1,103 @@
 # RNA_seq_WS
 Notes regarding ngs workshop
-Author : Swsti
+Author : Swsti Verma
 
 
 # Overview of Next Generation Sequencing (NGS) and Bioinformatics
 
 1. Introduction to the fundamental concepts of Next Generation Sequencing (NGS) and its role in modern biological research.
 
-2. Topics covered included the different sequencing strategies such as whole genome sequencing, exome sequencing, and targeted gene panels, highlighting how each approach is selected based on coverage, cost, and application.
+2. Topics covered included the different sequencing strategies such as whole genome sequencing, exome sequencing, and targeted gene panels, highlighting how each approach is selected based on coverage,       cost, and application.
 
-3. Also explained the basic workflow of NGS experiments, starting from sample preparation and sequencing to the generation of raw sequencing data in FASTQ format. The importance of quality control of sequencing reads, along with the role of bioinformatics tools such as FastQC in assessing data quality.
+3. Also explained the basic workflow of NGS experiments, starting from sample preparation and sequencing to the generation of raw sequencing data in FASTQ format. The importance of quality control of         sequencing reads, along with the role of bioinformatics tools such as FastQC in assessing data quality.
 
-4.An overview of downstream data analysis steps was provided, including read alignment to reference genomes, gene expression analysis in RNA-seq experiments, and interpretation of results. The challenges associated with handling large-scale sequencing data, including data storage, computational infrastructure, and data security, were also addressed.
+4. An overview of downstream data analysis steps was provided, including read alignment to reference genomes, gene expression analysis in RNA-seq experiments, and interpretation of results. The challenges    associated with handling large-scale sequencing data, including data storage, computational infrastructure, and data security, were also addressed.
 
 5. Highlighted the wide range of applications of NGS and bioinformatics in areas such as disease diagnosis, cancer genomics, pharmacogenomics, plant and microbial genomics, and environmental biotechnology.
 
+
+# PCR (Polymerase Chain Reaction)
+
+1. PCR is a technique used to amplify DNA, producing millions of copies of a specific DNA sequence.
+   
+2. Enzyme Used in PCR: Taq DNA polymerase, Thermostable enzyme, Isolated from Thermus aquaticus.
+   
+3. Steps of PCR: Denaturation (94–95°C)- Double-stranded DNA separates into single strands
+                 Annealing (50–65°C)- Primers bind to complementary DNA sequences
+                 Extension / Elongation (72°C)- Taq polymerase synthesizes new DNA strands
+   
+4. Primers in PCR: Short DNA sequences (18–25 bp). Define the region to be amplified. Proper primer design is essential for specificity.
+ 
+5. Primers cannot be designed for any reaction without sequence information. Design depends on Tm, GC content, and specificity. Tools such as NCBI Primer-BLAST are used.
+   
+6. Applications of PCR: Disease diagnosis, Research and cloning, Forensic analysis.
+
+
+# Central Dogma of Molecular Biology
+
+1. The central dogma describes the flow of genetic information: DNA → RNA → Protein
+    Replication: DNA makes identical copies of itself
+    Transcription: DNA is transcribed into RNA
+    Translation: RNA is translated into protein
+    Post-translational modifications alter protein function
+    These processes form the basis of genomics, transcriptomics, proteomics, and metabolomics, which together are studied in systems biology.
+   
+2. transcription: DNA is read, not consumed, during transcription. Produces mRNA, which carries genetic information to ribosomes. Discovery of mRNA (1961) confirmed RNA acts as a messenger between DNA and     protein.
+   Key points: Occurs 5’ → 3’, RNA polymerase synthesizes RNA, Transcription is the foundation of gene expression analysis (RNA-seq, qPCR)
+   
+3. tRNA as a Molecular Adaptor: tRNA (transfer RNA) delivers amino acids to ribosomes. Each tRNA binds a specific amino acid and matches it to mRNA codons. Confirms the adaptor hypothesis in protein           synthesis. Role: Links nucleotide language (RNA) to amino acid language (protein).
+   
+4. Reverse Transcription: Reverse transcription converts RNA → DNA (cDNA). Discovered by Howard Temin and David Baltimore (1970). Catalyzed by reverse transcriptase. 
+   Applications: RT-PCR, RNA-seq, Studying gene expression from RNA samples. This expands the central dogma beyond one-way flow.
+
+   
+# NGS file formats and performing quality control analysis of raw sequencing data using FastQC.
+
+1. NGS File Formats Introduced
+  -FASTA: Contains only nucleotide sequence information. No quality scores. Used for reference genomes and assembled sequences
+  -FASTQ: Contains both sequence and quality information. Raw output generated by sequencing platforms. Each read consists of four lines: identifier, sequence, separator (+), and quality scores
+  -SAM / BAM: SAM: Text-based sequence alignment format, BAM: Binary, compressed version of SAM. Used to store mapped reads after alignment to a reference genome
+  -BED: Defines genomic regions using chromosome coordinates. Commonly used for representing intervals such as exons or peaks
+  -GTF / GFF: Gene annotation file formats. Contain structured information about genes, transcripts, and exons.
+   
+2. FASTA vs FASTQ: FASTA stores only sequence data. FASTQ includes Phred quality scores for each base. FASTQ files are used for quality control and downstream analysis.
+
+3. Phred Quality Score: Measures base call accuracy. Q20 indicates ~99% accuracy. Q30 indicates ~99.9% accuracy. Higher scores correspond to lower probability of base-calling errors.
+
+4. FastQC – Quality Control of NGS Data. FastQC is a quality control tool used to analyze raw FASTQ files and identify potential sequencing issues before downstream analysis.
+  -FastQC Output Modules: Per Base Sequence Quality. Displays quality scores across each base position in reads. Green region indicates high-quality bases. Yellow indicates moderate quality. Red indicates     low-quality bases
+  -GC Content: Shows the distribution of GC content across all reads. Helps identify contamination or biased sequencing
+  -Adapter Contamination: Detects presence of adapter sequences in reads. Adapter contamination can affect alignment and must be removed if present
+  -Sequence Duplication Levels: Indicates the level of duplicate reads. High duplication may suggest PCR bias or over-amplification
+
+5. Each FastQC module is assigned a status:
+   -Pass – No issues detected
+   -Warning – Potential issue, may require attention
+   -Fail – Significant issue that should be corrected before analysis
+
+
+# Next-Generation Sequencing (NGS) Library Preparation
+
+1. Quality and Quantity Assessment: DNA/RNA quality is checked before downstream analysis. NanoDrop (Spectrophotometer) measures A260/280 and A260/230 ratios.Qubit is used for accurate DNA/RNA quantification. Gel electrophoresis checks nucleic acid integrity.
+
+2. Fragmentation: DNA is fragmented into smaller sizes, usually 200–500 bp. Required for sequencing workflows. Methods include: Mechanical (Sonication), Enzymatic fragmentation, PCR-based fragmentation (for amplicon sequencing).
+
+3. Polymerase Chain Reaction (PCR): Technique used to amplify specific DNA sequences. Uses Taq DNA polymerase. Three main steps:
+   Denaturation (≈95°C): DNA strands separate
+   Annealing (≈55°C): primers bind to template
+   Extension (≈72°C): DNA synthesis occurs
+
+3. Reverse Transcription PCR (RT-PCR): Used to convert RNA into cDNA using reverse transcriptase. cDNA is then amplified using PCR. Commonly used for gene expression studies.
+
+4. RT-qPCR Chemistries: Dye-based RT-qPCR: Fluorescent dye binds double-stranded DNA. Fluorescence increases with DNA amplification. 
+                       Probe-based RT-qPCR:Probe binds target DNA. Fluorescence is released only when probe is cleaved. Higher specificity than dye-based methods
+
+5. End Repair and A-Tailing: Fragmented DNA may have uneven ends. End repair converts fragments into blunt-ended DNA with 5′ phosphate groups. A-tailing adds a single adenine (A) to the 3′ ends. Prepares     DNA for adapter ligation.
+
+6. Adapter Ligation: Adapters contain:Sequencing primer binding sites, Index/barcode sequences, Flow cell binding regions
+   Enzyme used: T4 DNA ligase. Required for sequencing and multiplexing samples.
+
+7. Downstream Steps: Cleanup and size selection using magnetic beads. Removal of unbound adapters and primer dimers. Library amplification by PCR. Final library quality check for concentration, size, and     quality.
 
 
 # finding public biological datasets
@@ -33,8 +116,7 @@ Author : Swsti
 # Uploaded FASTQ file to Galaxy
 
 1. Ran FastQC for quality control analysis
-2. Observed quality metrics such as per-base sequence quality,
-  GC content, and adapter content
+2. Observed quality metrics such as per-base sequence quality, GC content, and adapter content
 
 
 # Key observations:
