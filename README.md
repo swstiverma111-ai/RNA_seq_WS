@@ -78,9 +78,9 @@ Author : Swsti Verma
 
 # Next-Generation Sequencing (NGS) Library Preparation
 
-1. Quality and Quantity Assessment: DNA/RNA quality is checked before downstream analysis. NanoDrop (Spectrophotometer) measures A260/280 and A260/230 ratios.Qubit is used for accurate DNA/RNA quantification. Gel electrophoresis checks nucleic acid integrity.
+1. Quality and Quantity Assessment: DNA/RNA quality is checked before downstream analysis. NanoDrop (Spectrophotometer) measures A260/280 and A260/230 ratios.Qubit is used for accurate DNA/RNA                quantification. Gel electrophoresis checks nucleic acid integrity.
 
-2. Fragmentation: DNA is fragmented into smaller sizes, usually 200–500 bp. Required for sequencing workflows. Methods include: Mechanical (Sonication), Enzymatic fragmentation, PCR-based fragmentation (for amplicon sequencing).
+2. Fragmentation: DNA is fragmented into smaller sizes, usually 200–500 bp. Required for sequencing workflows. Methods include: Mechanical (Sonication), Enzymatic fragmentation, PCR-based fragmentation       (for amplicon sequencing).
 
 3. Polymerase Chain Reaction (PCR): Technique used to amplify specific DNA sequences. Uses Taq DNA polymerase. Three main steps:
    Denaturation (≈95°C): DNA strands separate
@@ -98,6 +98,38 @@ Author : Swsti Verma
    Enzyme used: T4 DNA ligase. Required for sequencing and multiplexing samples.
 
 7. Downstream Steps: Cleanup and size selection using magnetic beads. Removal of unbound adapters and primer dimers. Library amplification by PCR. Final library quality check for concentration, size, and     quality.
+
+
+# BLAST Analysis and Primer Design for PCR
+
+1. BLAST (Basic Local Alignment Search Tool)
+   Why we use BLAST: Identify unknown sequences, Confirm gene identity, Check primer specificity, Compare sequences across organisms
+
+2. Types of BLAST:
+   -Megablast: For highly similar sequences (≥95% identity). 
+   -Discontiguous Megablast: For more divergent sequences. Cross-species comparisons.
+   -BLASTn: General nucleotide sequence comparison. Used when similarity is moderate or unknown.
+
+2. Understanding BLAST Output: Key parameters to check:
+   -Query Coverage: % of query sequence aligned
+   -Percent Identity: Exact base/residue matches
+   -E-value: Near 0 → highly significant match, High value → match may be random
+   -Alignment Length: Length of matching region
+   -Max Score: Best single alignment score
+   -Total Score: Sum of all alignment scores
+
+3. BLAST in Primer Design: Used to check primer specificity. Ensures primers bind only to target gene. Helps avoid off-target amplification.
+
+4. Basic Primer Design Rules: Length: 18–30 bases, GC content: 40–60%. Avoid: Secondary structures, Hairpins, Primer dimers
+   Forward and reverse primers should have similar Tm (±5°C)
+
+5. Melting Temperature (Tm) in PCR: Factors influencing Tm
+   -Primer length: Longer → higher Tm
+   -GC content: Higher GC → higher Tm
+   -Salt concentration: Higher salt → higher Tm-Primer concentration
+   Use of Tm in PCR: Annealing temperature (Ta) ≈ Tm – 5°C
+
+6. PCR-Based Diagnostic Kit Design (Workflow): Obtain genome sequences of target pathogen. Perform multiple sequence alignment. Identify conserved regions. Check similarity with other organisms. Design       primers and run PCR. Validate using positive and negative controls
 
 
 # finding public biological datasets
