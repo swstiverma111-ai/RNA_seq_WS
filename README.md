@@ -168,3 +168,44 @@ Author : Swsti Verma
 1. Quality scores vary across read length
 2. GC content distribution reflects sample composition
 3. FastQC helps assess whether preprocessing is required
+
+
+# trim gallore
+
+1. Trim Galore was used to remove low-quality bases and adapter sequences identified by FastQC.
+
+
+# mapping 
+
+1. High-quality trimmed reads were aligned to the reference genome using Bowtie2.
+
+  <img width="454" height="238" alt="image" src="https://github.com/user-attachments/assets/ae6ab152-3977-4f1c-8f20-f5577297b295" />
+
+
+
+# Read Quantification using featureCounts
+
+1. Counts how many reads overlap each gene/exon.
+
+2. Produces a count matrix (genes × read counts)
+
+   <img width="929" height="634" alt="image" src="https://github.com/user-attachments/assets/c3250521-a298-4f83-b9c8-bf8efc4ad221" />
+
+
+# Differential Expression Analysis (DESeq2)
+
+1. DESeq2 was used for normalization and statistical analysis.
+
+2. Identifies differentially expressed genes between conditions.
+
+   <img width="841" height="622" alt="image" src="https://github.com/user-attachments/assets/6d036fe0-c8b2-42f2-903e-e6e9d1a20329" />
+
+   <img width="584" height="584" alt="image" src="https://github.com/user-attachments/assets/c79e90ee-81f8-4e37-8a2c-c13fb28be5fd" />
+
+   <img width="579" height="580" alt="image" src="https://github.com/user-attachments/assets/60cdaa1b-0f4a-4058-a966-c38644d3d964" />
+
+   <img width="559" height="578" alt="image" src="https://github.com/user-attachments/assets/8811ca8b-dae8-4225-a60c-8239100c7371" />
+
+   <img width="570" height="579" alt="image" src="https://github.com/user-attachments/assets/42381d1d-e44a-4e15-8163-bd333a2c0f38" />
+
+
