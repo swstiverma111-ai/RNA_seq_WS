@@ -209,3 +209,99 @@ Author : Swsti Verma
    <img width="570" height="579" alt="image" src="https://github.com/user-attachments/assets/42381d1d-e44a-4e15-8163-bd333a2c0f38" />
 
 
+# Heatmap Analysis 
+
+1. After differential expression analysis using DESeq2, a heatmap was generated from the normalized expression matrix.
+
+2. The heatmap visualizes gene expression patterns across samples.
+
+3. Rows represent genes (often top differentially expressed genes).
+
+4. Columns represent samples or conditions.
+
+5. Color intensity indicates relative expression levels (e.g., high vs low expression).
+
+6. Clustering helps identify: Similar expression profiles between samples. Groups of co-regulated genes
+
+
+# Variant Calling using DeepVariant
+
+1. DeepVariant is a deep learning–based tool used for accurate variant calling.
+
+2. It takes aligned reads (BAM files) as input and predicts SNPs and small indels.
+
+3. DeepVariant converts read data into images and uses a neural network to identify variants.
+
+4. Output is generated in VCF format, containing high-confidence variant calls.
+
+5. This approach improves variant accuracy compared to traditional rule-based methods.
+
+   
+# applications of NGS
+
+1. Transcriptomics (RNA-Seq): Gene expression profiling, Differential gene expression analysis (using DESeq2 after featureCounts), Detection of alternative splicing events
+
+2. Clinical Diagnostics: Cancer genomics, Inherited disease detection, Prenatal screening, Pathogen identification.
+
+3. Agricultural & Plant Genomics: Crop improvement, Identification of disease-resistance genes, Stress tolerance studies
+
+4. Infectious Disease Surveillance: Viral and bacterial genome sequencing, Outbreak tracking (e.g., COVID-19), Antimicrobial resistance (AMR) detection
+
+5. Metagenomics & Microbiome Studies: Gut microbiome analysis, Environmental sample analysis, Wastewater surveillance
+
+6. Personalized Medicine: Pharmacogenomics, Treatment selection based on individual genetic profiles
+
+7. Antibiotic Resistance (AMR): Caused by overuse/misuse of antibiotics, Leads to selection of resistant microbial strains, NGS helps track resistance genes and transmission
+
+8. Future Scope of NGS: Single-cell sequencing, Point-of-care clinical sequencing, Integration of NGS data with AI and machine learning
+
+
+# coronavirus survelliance and cross-species transmission dynamics
+
+1. Coronavirus Surveillance & Evolution: Coronaviruses show high evolutionary flexibility and zoonotic potential. Multiple animal species act as reservoirs for different coronaviruses. Surveillance in animals is critical to detect spillover risks early.
+
+2. Animal Surveillance Studies: Wide range of mammals harbor coronaviruses (e.g., rodents, carnivores, deer). Geographic mapping helps identify hotspots of viral diversity. Wildlife surveillance complements human disease monitoring.
+
+3. Host Susceptibility & Transmission: Peromyscus leucopus (deer mouse) shows: Very low susceptibility to OC43. No evidence of efficient transmission. SARS-CoV-2 infection studies show: Variable susceptibility across species. Limited transmission via fomites in some models
+
+4. Variant-Specific Findings: Omicron strain: Lower viral shedding compared to ancestral strains. Causes less severe pathology in animal models. Ancestral (Wuhan) strain shows: Higher viral replication. Greater tissue pathology
+
+5. Pathology Observations: Omicron-infected hamsters exhibit: Reduced lung damage. Minimal histopathological changes. No significant pathology observed in fomite-exposed animals.
+
+6. Role of NGS in These Studies: Genome sequencing enables: Variant identification. Phylogenetic analysis. Tracking viral evolution and spread. Supports One Health approach linking human, animal, and environmental health.
+
+
+# sequencing 
+
+1. Next-Generation Sequencing (NGS): High-throughput sequencing technology used to analyze DNA and RNA. Enables rapid, large-scale genome and transcriptome analysis. Widely applied in pathogen detection,     outbreak tracking, and research.
+
+2. Sequencing Approaches: Whole Genome Sequencing (WGS): Sequences the entire genome. Targeted Sequencing: Focuses on specific genes or regions of interest. Capture Sequencing: Uses probes to enrich          selected genomic regions before sequencing.
+
+3. Applications in Infectious Diseases: Pathogen identification and characterization. Antimicrobial resistance detection. Outbreak investigation and transmission tracking. Evolutionary and population         studies. Vaccine and diagnostic development.
+
+4. Comparative Sequencing Methods: Short-read sequencing: High accuracy, lower read length. Long-read sequencing: Longer reads, useful for complex genomes. Choice depends on research objective and genome     complexity.
+
+5. Peptide Array Technology: Uses overlapping peptide sequences printed on arrays. Helps identify antigenic regions and immune responses. Useful in epitope mapping and vaccine research.
+
+6. Capture-Based Workflows: Genomic DNA is fragmented and hybridized with specific probes. Enriched DNA is sequenced for detailed analysis. Improves sensitivity when studying low-abundance targets.
+
+7. Public Health Relevance: Supports disease surveillance and pandemic preparedness. Assists in tracking zoonotic spillovers and emerging infections. Helps guide public health interventions.
+
+
+# Molecular Epidemiology & Genomic Surveillance of SARS-CoV-2
+
+1. Molecular Epidemiology: Combines molecular biology + epidemiology to track infectious diseases. Uses genome sequencing to study transmission, evolution, and spread of pathogens. Helps identify sources     of infection, outbreak patterns, and variant emergence.
+
+2. Role of Genomics in COVID-19: Genome sequencing enabled identification of SARS-CoV-2 variants. Helped trace introduction, transmission, and persistence of variants in India. Supported monitoring of        mutation patterns and geographic spread.
+
+3. SARS-CoV-2 in India: First case detected in January 2020. Symptoms include fever, cough, breathlessness, loss of taste/smell. Genomic surveillance revealed multiple introductions and community             transmission.
+
+4. Variants of Interest (VOI) & Variants of Concern (VOC): Alpha (B.1.1.7), Delta (B.1.617.2), Gamma, etc. VOCs show: Increased transmissibility, Immune escape potential, Higher viral load. Classification    based on genetic mutations and epidemiological impact.
+
+5. Genomic Surveillance in India (INSACOG): INSACOG: Indian SARS-CoV-2 Genomics Consortium. Objectives: Monitor emerging variants, Correlate variants with disease severity, Support public health              decisions. Nationwide sequencing and data sharing.
+
+6. Variant Distribution & Phylogenetics: State-wise distribution shows regional dominance of variants. Phylogenetic analysis: Traces evolutionary relationships. Identifies origins and spread pathways.        Helps detect new mutations early.
+
+7. In Vitro & Functional Studies: Assess variant impact on: Antibody neutralization, Viral replication efficiency, Delta variant showed reduced neutralization sensitivity.
+
+8. Importance of Molecular Techniques: Enables: Accurate diagnosis, Variant tracking, Vaccine and therapeutic design, Strengthens pandemic preparedness and outbreak control.
