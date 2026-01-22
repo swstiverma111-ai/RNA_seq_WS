@@ -306,3 +306,118 @@ Author : Swsti Verma
 
 8. Importance of Molecular Techniques: Enables: Accurate diagnosis, Variant tracking, Vaccine and therapeutic design, Strengthens pandemic preparedness and outbreak control.
 
+
+
+
+
+
+# ACTB_primer_design
+Primer design using NCBI Primer-BLAST
+
+Target gene: ACTB (beta-actin), Homo sapiens
+
+Forward Primer (5' → 3'):
+GTCACCAACTGGGACGACAT
+
+Reverse Primer (5' → 3'):
+AGCACAGCCTGGATAGCAAC
+
+Primer length: 20 bp
+
+Tm: Forward 59.97 °C, Reverse 60.39 °C
+
+GC content: 55%
+
+Expected product length:	194 bp
+
+Specificity Statement: The primer pair is specific to ACTB (beta-actin) and does not show significant off-target amplification in the human genome.
+
+
+
+
+#  Identify an Unknown Biological Sequence Using BLAST 
+
+
+Given sequence number
+
+(Sequence 1):
+
+1 CGGACACACAAAAAGAAAGAAGAATTTTTA GGATCTTTTGTGTGCGAATAACTATGAGGA
+61 AGATTAATAATTTTCCTCTCATTGAAATTTATATCGGAATTTAAATTGAAATTGTTACTG
+121 TAATCACACCTGGTTTGTTTCAGAGCCACATCACAAAGATAGAGAACAACCTAGGTCTCC
+181 GAAGGGAGCAAGGGCATCAGTGTGCTCAGTTGAAAATCCC 
+
+
+# Type of sequence:
+
+DNA 
+
+
+# BLAST Tool Selection
+
+
+BLAST program used:
+
+BLASTn for DNA sequences
+
+![Screenshot 2026-01-21 212256](https://github.com/user-attachments/assets/0c1c9540-89e9-4dfb-9fb1-14d619377049)
+
+
+
+
+# BLAST Results 
+
+(Top Hit Analysis)
+
+Gene name:Zaire ebolavirus isolate Ebola virus/H.sapiens-rec/COD/1976/Yambuku-Mayinga-eGFP-BDBV_GP
+
+Organism name : Zaire ebolavirus
+
+Database used : core_nt
+
+Percentage identity :100.00%
+
+E-value:4e-109
+
+![Screenshot 2026-01-21 212328](https://github.com/user-attachments/assets/de403282-067a-4e09-9071-a7e9f56295dd)
+
+
+# Alignment Interpretation
+
+Matching Regions
+
+The alignment shows 220 out of 220 nucleotides matching between the query sequence and the subject sequence.
+
+This corresponds to 100% identity, meaning every nucleotide in the query exactly matches the reference sequence.
+
+The alignment is continuous from position 1 to 220, showing that the entire query sequence aligns with the reference genome.
+
+
+# Gaps or Mismatches
+
+No gaps are present in the alignment (Gaps: 0/220, 0%).
+
+No mismatches are observed between the query and subject sequences.
+
+Yes, the alignment strongly supports correct identification of the sequence.
+
+
+# Biological Function
+
+ The Ebola virus genome encodes proteins involved in viral replication and infection of human cells. Since Ebola virus causes a severe infectious disease in humans, this sequence is considered to be disease-related in function.
+
+ # Classification & Interpretation
+ 
+Gene or Protein
+
+The identified sequence is a gene and not a protein sequence, as it consists only of nucleotide bases (A, T, G, and C) and does not represent an amino acid sequence.
+
+
+The sequence is species-specific, as it shows a 100% match to the Zaire ebolavirus genome and is not broadly conserved across unrelated organisms.
+
+
+#  Final Conclusion 
+
+
+The given unknown sequence is identified as gene from Zaire ebolavirus organism. BLAST analysis shows a % identity of 100.00% and an E-value of 4e-109, indicating a strong match.
+
