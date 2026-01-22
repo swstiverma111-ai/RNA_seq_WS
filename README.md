@@ -421,3 +421,162 @@ The sequence is species-specific, as it shows a 100% match to the Zaire ebolavir
 
 The given unknown sequence is identified as gene from Zaire ebolavirus organism. BLAST analysis shows a % identity of 100.00% and an E-value of 4e-109, indicating a strong match.
 
+
+
+
+# Sequence 2
+
+1 CTCGAGGGGC CTAGACATTG CCCTCCAGAG AGAGCACCCA ACACCCTCCA GGCTTGACCG
+61 GCCAGGGTGT CCCCTTCCTA CCTTGGAGAG AGCAGCCCCA GGGCATCCTG CAGGGGGTGC
+121 TGGGACACCA GCTGGCCTTC AAGGTCTCTG CCTCCCTCCA GCCACCCCAC TACACGCTGC
+181 TGGGATCCTG GATCTCAGCT CCCTGGCCGA CAACACTGGC AAACTCCTAC TCATCCACGA
+
+
+# Type of sequence:
+
+DNA 
+
+
+# BLAST Tool Selection
+
+BLAST program used:
+
+BLASTn for DNA sequences
+
+![Screenshot 2026-01-21 225319](https://github.com/user-attachments/assets/844323e3-cf67-435d-98a4-14547cdcaf63)
+
+
+
+# BLAST Results 
+
+(Top Hit Analysis)
+
+
+Gene name: Homo sapiens insulin (INS) gene
+
+Organism name: Homo sapiens
+
+Database used : core_nt
+
+Percentage identity:100.00%
+
+E-value:4e-120
+
+![Screenshot 2026-01-21 225357](https://github.com/user-attachments/assets/8ad49581-c154-4936-989a-9d8912fe7bda)
+
+
+
+# Alignment Interpretation
+
+Matching Regions
+
+Aligned range: 1–240 bp
+
+Identities: 240/240 (100%)
+
+This means every nucleotide in this 240 bp region matches perfectly with Homo sapiens insulin gene
+
+ Gaps or mismatches
+
+Gaps: 0/240 (0%)
+
+Mismatches: None
+
+# Classification & Interpretation
+
+Organism type: Eukaryotic
+
+Conservation: Conserved across species
+
+
+# Conclusion
+
+The given unknown sequence is identified as  Homo sapiens insulin (INS) gene from Homo sapien organism. BLAST analysis shows a % identity of 100.00% and an E-value of 4e-120 indicating a strong match
+
+
+# Sequence 3
+
+MAGRSGDSDEDLLKAVRGIRGQYGTIYSLIEESQNQQEKNEQELLELDKW
+ASLWNWFDITNWLWYIKIFIMIVGGLIGLRIVFAVLSIVNRVRQGYSPLS
+
+
+# Type of sequence
+
+Protein
+
+# BLAST Tool Selection
+
+BLAST program used:
+
+BLASTp for protein sequences
+
+![Screenshot 2026-01-21 234244](https://github.com/user-attachments/assets/3a9c1878-33f0-49b6-a3dd-8222ea8f3096)
+
+
+# BLAST Results 
+
+(Top Hit Analysis)
+
+
+protein name:  Envelope glycoprotein gp160,Envelope glycoprotein gp160 
+
+Organism name: Human immunodeficiency virus 1
+
+Database used : core_nt
+
+Percentage identity: 80.43%
+
+E-value: 2e-44
+
+![Screenshot 2026-01-21 234310](https://github.com/user-attachments/assets/ab637aef-c8d2-4ac2-93d6-91285ffc7888)
+
+
+# Alignment Interpretation
+
+Matching regions:
+
+Aligned region: amino acids 99–190
+
+Alignment length: 92 amino acids
+
+Identities: 74/92 (80% identical)
+
+
+# Gaps or mismatches:
+
+Gaps: 0/92 (no gaps)
+
+Mismatches: Present (since identity is 80%, about 18 residues differ)
+
+
+# Biological role 
+
+The protein gp160 is an envelope glycoprotein of HIV-1 that helps the virus attach to and enter human host cells.
+
+
+Metabolism: No
+
+Disease: Yes — essential for HIV infection and pathogenesis
+
+Structural function: Yes — forms part of the viral envelope
+
+Regulation: No
+
+
+# Classification & Interpretation 
+
+Type: Protein : envelope glycoprotein gp160
+
+Organism type: Neither prokaryotic nor eukaryotic — it is viral (HIV-1)
+
+Conservation: Conserved among HIV strains
+
+Species-specific: Yes — specific to HIV-1, not found in normal host cells
+
+
+# Conclusion
+
+The given unknown sequence is identified as protein from HIV1 virus organism. BLAST analysis shows a % identity of 80.43% and an E-value of 2e-44 indicating a strong match
+
+
+
