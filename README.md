@@ -306,24 +306,3 @@ Author : Swsti Verma
 
 8. Importance of Molecular Techniques: Enables: Accurate diagnosis, Variant tracking, Vaccine and therapeutic design, Strengthens pandemic preparedness and outbreak control.
 
-
-
-# Identify an Unknown Biological Sequence Using BLAST
-
-1.Go to website https://blast.ncbi.nlm.nih.gov
-
-2. Open the correct BLAST program [DNA BLASTn Protein BLASTp]
-
-3. Paste the sequence into the “Enter Query Sequence” box
-
-4. Keep all settings default
-
-5. Click BLAST
-
-Sequence Observation
-
-Given sequence number
-
-(Sequence 1):
-
-1 CGGACACACAAAAAGAAAGAAGAATTTTTA GGATCTTTTGTGTGCGAATAACTATGAGGA 61 AGATTAATAATTTTCCTCTCATTGAAATTTATATCGGAATTTAAATTGAAATTGTTACTG 121 TAATCACACCTGGTTTGTTTCAGAGCCACATCACAAAGATAGAGAACAACCTAGGTCTCC 181 GAAGGGAGCAAGGGCATCAGTGTGCTCAGTTGAAAATCCC
